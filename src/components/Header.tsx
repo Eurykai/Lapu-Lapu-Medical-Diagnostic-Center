@@ -35,13 +35,12 @@ export default function Header({ currentPage, setCurrentPage }: HeaderProps) {
           <div className="flex items-center gap-4 text-gray-200">
             <span className="text-brand-teal font-semibold text-[10px] sm:text-xs">DOH Licensed Clinical Laboratory</span>
             <span className="hidden sm:inline text-gray-500">|</span>
-            <a
-              href="tel:0324959328"
-              className="flex items-center gap-1 hover:text-brand-teal transition-colors font-medium cursor-pointer"
+            <span
+              className="flex items-center gap-1 font-medium text-gray-200"
             >
               <Phone size={12} className="text-brand-teal" />
               <span>(032) 495 9328 (Call Desk)</span>
-            </a>
+            </span>
           </div>
         </div>
       </div>
@@ -55,10 +54,10 @@ export default function Header({ currentPage, setCurrentPage }: HeaderProps) {
         >
           <div className="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl flex items-center justify-center shrink-0 transition-all duration-200 hover:scale-[1.03]" id="llmdci_logo_container">
             <svg viewBox="0 0 200 200" className="w-full h-full select-none drop-shadow-sm" xmlns="http://www.w3.org/2000/svg" id="llmdci_logo_svg">
-              {/* Outer Golden Shield Outline */}
+              {/* Outer White Shield Outline */}
               <path 
                 d="M 40 30 C 70 24, 130 24, 160 30 C 165 95, 155 135, 100 178 C 45 135, 35 95, 40 30 Z" 
-                fill="#fbc02d" 
+                fill="#ffffff" 
                 stroke="#034522" 
                 strokeWidth="5.5" 
                 strokeLinejoin="round"
@@ -233,15 +232,14 @@ export default function Header({ currentPage, setCurrentPage }: HeaderProps) {
               })}
             </div>
 
-            {/* Quick Contact Action Button */}
+            {/* Quick Contact Action Info */}
             <div className="pt-2">
-              <a
-                href="tel:0324959328"
-                className="w-full text-center px-4 py-4 text-sm font-bold text-white bg-brand-dark hover:bg-black rounded-2xl transition-all flex items-center justify-center gap-2 shadow-md shadow-brand-dark/15 active:scale-[0.99]"
+              <div
+                className="w-full text-center px-4 py-4 text-sm font-bold text-white bg-brand-dark rounded-2xl flex items-center justify-center gap-2 shadow-md shadow-brand-dark/15"
               >
-                <Phone size={16} />
-                <span>Call Front Desk: (032) 495 9328</span>
-              </a>
+                <Phone size={16} className="text-brand-teal" />
+                <span>Front Desk: (032) 495 9328</span>
+              </div>
             </div>
             
           </div>

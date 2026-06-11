@@ -15,10 +15,16 @@ export default function Hero({ setCurrentPage }: HeroProps) {
       </div>
 
       <div className="max-w-5xl mx-auto relative z-10 flex flex-col items-center text-center space-y-8 animate-fadeIn">
-        {/* Accent notification badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-brand-light-blue border border-brand-blue/20 text-brand-navy text-xs font-bold rounded-full uppercase tracking-wider">
-          <Sparkles size={14} className="text-brand-blue" />
-          <span>Modern Diagnostic Center in Lapu-Lapu City</span>
+        {/* Accent notification badges */}
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-brand-light-blue border border-brand-blue/20 text-brand-navy text-xs font-bold rounded-full uppercase tracking-wider">
+            <Sparkles size={14} className="text-brand-blue" />
+            <span>Modern Diagnostic Center in Lapu-Lapu City</span>
+          </div>
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-emerald-50 border border-emerald-500/20 text-emerald-900 text-xs font-bold rounded-full uppercase tracking-wider">
+            <Award size={14} className="text-emerald-700 animate-pulse" />
+            <span>Accredited Philhealth Yakap Program</span>
+          </div>
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight pb-2 leading-[1.1] text-brand-dark">
@@ -34,6 +40,10 @@ export default function Hero({ setCurrentPage }: HeroProps) {
 
         {/* Quick trust assurances */}
         <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm font-semibold text-gray-500 pt-4">
+          <span className="flex items-center gap-2 bg-emerald-50/50 text-emerald-950 px-3 py-1.5 rounded-lg border border-emerald-100">
+            <Award size={16} className="text-emerald-700 animate-pulse" />
+            <span>Accredited Philhealth Yakap Program</span>
+          </span>
           <span className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-100">
             <Award size={16} className="text-brand-blue" />
             <span>DOH Accredited Clinical Lab #07-0041-26</span>
