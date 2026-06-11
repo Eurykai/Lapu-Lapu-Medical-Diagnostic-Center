@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Lapu-Lapu Medical Diagnostic Center Inc. (LLMDCI)",
+  "description": "The high-converting, patient-centric digital portal for LLMDCI in Lapu-Lapu City, Cebu. Search results, schedule appointments, and browse diagnostic services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
